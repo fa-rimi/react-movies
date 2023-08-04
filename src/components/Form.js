@@ -1,3 +1,5 @@
+// import "../App.css"
+
 // Define a function that is our component, always make sure to declare the props parameter so you can use props in your component
 import { useState, useEffect } from "react";
 
@@ -31,7 +33,7 @@ export default function Form(props) {
           onChange={handleChange}
           value={formData.searchterm}
         />
-        <input type="submit" value="submit" />
+        <input type="submit" value="submit" className="bg-green-500 w-20 rounded-sm"/>
       </form>
     </div>
   );
