@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+// WE IMPORT OUR COMPONENTS
+import MovieDisplay from "./components/MovieDisplay.js";
+import Form from "./components/Form.js";
 
-function App() {
+export default function App() {
+  // USE OUR COMPONENTS IN APPs RETURNED JSX
   return (
+    // Write JSX here -- JSX is what will return and display on our screen like HTML
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Form />
+      <MovieDisplay />
     </div>
   );
 }
-
-export default App;
